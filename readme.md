@@ -1,5 +1,2 @@
 x = input()
-print("Var x : " + x)
-print(type(x))
-x = int(x)
-print(type(x))
+print("HI "+x)
