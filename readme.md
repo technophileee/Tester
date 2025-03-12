@@ -6,5 +6,9 @@ def qs(arr):
     pivot = arr[n//2]
     return qs([x for x in arr if x<pivot]) + [x for x in arr if x==pivot] + qs([x for x in arr if x>pivot])
 
-arr = [64,25,12,22,11]
+arr = [0,0,0,0,0]
+for i in range(0,5):
+  x=int(input())
+  arr[i]=x
+
 print("Sorted array : ",qs(arr))
