@@ -1,1 +1,1 @@
-print("kucn")
+print("hi") 
