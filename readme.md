@@ -1,1 +1,1 @@
-kuch nahi bhai
+print("Hiiiiiiiiii")
