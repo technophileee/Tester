@@ -1,2 +1,1 @@
-x = input()
-print("Hello Soniverse", x)
+print("Radhe Radhe")
