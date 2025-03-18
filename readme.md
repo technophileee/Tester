@@ -1,4 +1,2 @@
-
-
-
-print("Hello Soniverse")
+x = input()
+print("Hello Soniverse", x)
