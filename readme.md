@@ -1,1 +1,1 @@
-print("Gekiiiiiiwwwwwwwwwwwwwiiiiiii")
+print("Gekiiiiiiwwwwwwddddddddddddddwwwwwwwiiiiiii")
