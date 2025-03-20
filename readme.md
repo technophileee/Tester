@@ -1,1 +1,2 @@
-print("Helloooo")
+x = input()
+print("HELLO SONIVERSE " + x)
