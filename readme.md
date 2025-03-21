@@ -1,2 +1,3 @@
+print("NASMASTE")
 x = input()
-print("HELLO SONIVERSE " + x)
+print(x)
