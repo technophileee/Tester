@@ -1,3 +1,3 @@
-# Ruby Language ------------
+# Python Language ------------
 
-puts "Hello SoniVerse by Ruby"
+print("Hello SoniVerse by Python")
