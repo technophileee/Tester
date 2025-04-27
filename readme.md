@@ -1,3 +1,3 @@
-# Ruby Language ------------
+// JavaScript Language ------------
 
-puts "Hello SoniVerse by Ruby"
+console.log("Hello SoniVerse by JavaScript");
