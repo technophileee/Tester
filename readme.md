@@ -1,23 +1,10 @@
-def degrees_AdjMatrix(graph):
-    vertices = sorted(graph)
-    n = len(vertices)
-    adj = [[0] * n for _ in range(n)]
-    indegree, outdegree = {v:0 for v in vertices}, {v:0 for v in vertices}
+def selectionSort(arr):
+    n = len(arr)
+    for i in range(n):
+        minInx = min(range(i,n), key = arr.__getitem__)
+        arr[i], arr[minInx] = arr[minInx], arr[i]
 
-    for i,v in enumerate(vertices):
-        outdegree[v] = len(graph[v])
-        for u in graph[v]:
-            adj[i][vertices.index(u)] = 1
-            indegree[u] += 1
-    
-    print(f"Indegree : {indegree}\nOutdegree : {outdegree}\nAdjacent Matrix : ")
-    for row in adj:
-        print(row)
-
-graph = {
-    'A':['B','C'],
-    'B':['D'],
-    'C':['D'],
-    'D':[]
-}
-degrees_AdjMatrix(graph)
+arr = [64,25,12,22,11]
+selectionSort(arr)
+print("sorted array : ",arr) 
+#dfghjk yeahhhhhhhhhh ngrok ki JAI HOooooooooo
