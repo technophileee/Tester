@@ -1,10 +1,23 @@
-def qs(arr):
-    n = len(arr)
-    if n<=1: 
-        return arr
-    
-    pivot = arr[n//2]
-    return qs([x for x in arr if x<pivot]) + [x for x in arr if x==pivot] + qs([x for x in arr if x>pivot])
+def degrees_AdjMatrix(graph):
+    vertices = sorted(graph)
+    n = len(vertices)
+    adj = [[0] * n for _ in range(n)]
+    indegree, outdegree = {v:0 for v in vertices}, {v:0 for v in vertices}
 
-arr = [64,25,12,22,11]
-print("Sorted array : ",qs(arr))
+    for i,v in enumerate(vertices):
+        outdegree[v] = len(graph[v])
+        for u in graph[v]:
+            adj[i][vertices.index(u)] = 1
+            indegree[u] += 1
+    
+    print(f"Indegree : {indegree}\nOutdegree : {outdegree}\nAdjacent Matrix : ")
+    for row in adj:
+        print(row)
+
+graph = {
+    'A':['B','C'],
+    'B':['D'],
+    'C':['D'],
+    'D':[]
+}
+degrees_AdjMatrix(graph)
